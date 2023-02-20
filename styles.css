@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
+}
+
+a:visited,
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    background-color: #1f2937;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+.top-page{
+    background-color: #1f2937;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    margin-top: auto;
+
+    background-color: #1f2937;
+    color: white;
+}
+
+
+
+
