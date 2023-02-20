@@ -1,8 +1,10 @@
+/*Reset margin and padding for better precision*/
 *{
     margin: 0;
     padding: 0;
 }
 
+/*Put Footer on the bottom of the page 1/3*/
 html{
     height: 100%;
 }
@@ -11,43 +13,74 @@ body{
     display: flex;
     flex-direction: column;
 
+    font-family: "Roboto", Calibri, Tahoma, sans-serif;
+
+    /*Put Footer on the bottom of the page 2/3*/
     min-height: 100%;
 }
 
-a:visited,
-a:link{
+/*Links Setting*/
+a{
+    /*Remove underline from link*/
     text-decoration: none;
-    color: white;
+
+    /*Visited link take color from parent */
+    color: inherit;
 }
 
+/*Navigation bar*/
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    
     background-color: #1f2937;
     color: white;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+    font-size: 24px;
+    font-weight: bold;
+    color: #f9faf8;
+    
+    padding: 15px;
 }
 
 ul{
     list-style: none;
-    display: flex;
-    gap: 20px;
-}
 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+    
+    color: #E5E7EB;
+    font-size: 18px;
+}
 
 .top-page{
     background-color: #1f2937;
     color: white;
+    height: 500px;
 }
 
 .footer{
+    /*Flexbox*/
     display: flex;
-    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 
+    /*Styling*/
     background-color: #1f2937;
     color: white;
+
+    /*Put Footer on the bottom of the page 3/3*/
+    margin-top: auto;
 }
 
 
